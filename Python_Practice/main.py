@@ -37,7 +37,14 @@
 ###################################################3
 # Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
 
-def rotation(a):
- rotated_list = a[1:] + a[:1]
- return rotated_list
-print(rotation([1,2,3]))
+# def rotation(a):
+#  rotated_list = a[1:] + a[:1]
+#  return rotated_list
+# print(rotation([1,2,3]))
+
+########################################################
+#Practicing multiple args
+def my_sum(*args):
+    result = sum(args)
+    return result
+print(my_sum(1,2,3,5))
