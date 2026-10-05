@@ -48,3 +48,16 @@ def my_sum(*args):
     result = sum(args)
     return result
 print(my_sum(1,2,3,5))
+
+######################################################
+#Practicing multiple args
+def get_branch_info(commit_id, name, owner_name, **kwargs):
+    print("This is commit id:", commit_id)
+    print("This is the name:", name)
+    print("This is the owner name:", owner_name)
+    print(kwargs)
+
+get_branch_info(owner_name="CodelineAtyab",
+                    name="Ikhlas",
+                    commit_id=1122,
+                    show_history=True) #last args will be shown as dictionary
