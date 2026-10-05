@@ -27,5 +27,17 @@
 # print(sumnum(10,5))
 
 #######################################################
+#Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
 
+# def two_array(a,b):
+#     new_list = [a[1] , b[1]]
+#     return new_list 
+# print(two_array([1,2,3],[4,5,6]))
 
+###################################################3
+# Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}.
+
+def rotation(a):
+ rotated_list = a[1:] + a[:1]
+ return rotated_list
+print(rotation([1,2,3]))
